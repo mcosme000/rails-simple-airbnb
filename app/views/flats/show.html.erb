@@ -1,0 +1,20 @@
+
+<div class="banner" style="background-image: url(http://i54.tinypic.com/4zuxif.jpg)"></div>
+
+
+<div class="container mt-3">
+  <%= link_to "Go back", flats_path %>
+
+  <div class="info-grid">
+    <div class="card">
+        <h1><%= @flat.name %></h1>
+        <p><%= @flat.address %></p>
+    </div>
+    <div class="card">
+      <h2>What is special about this flat?</h2>
+      <p><%= @flat.description %></p>
+      <div class="map"></div>
+    </div>
+    <div class="card"></div>
+  </div>
+</div>

@@ -1,7 +1,12 @@
 .form-container {
   padding: 20px;
-  width: 400px;
+  max-width: 500px;
   margin: 0 auto;
   background: rgb(230, 230, 230);
   border-radius: 5px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }

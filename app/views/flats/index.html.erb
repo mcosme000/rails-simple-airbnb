@@ -14,9 +14,9 @@
           <h2><%= flat.price_per_night %>$</h2>
         </div>
         <div class="btn-container">
-          <%= link_to "See details" %>
-          <%= link_to "Edit" %>
-          <%= link_to "Delete" %>
+          <%= link_to "See details", flat_path(flat) %>
+          <%= link_to "Edit", edit_flat_path(flat) %>
+          <%= link_to "Delete", flat_path(flat), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }%>
         </div>
       </div>
     <% end %>
