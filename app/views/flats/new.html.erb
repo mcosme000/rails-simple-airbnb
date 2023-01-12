@@ -1,0 +1,16 @@
+<div class="container mt-3">
+
+<%= link_to "Go back", flats_path, class: "btn btn-light" %>
+  <div class="form-container">
+    <h1>Add a new flat</h1>
+
+    <%= simple_form_for @flat do |f| %>
+      <%= f.input :name, label: "Flat name" %>
+      <%= f.input :address, label: "Flat address" %>
+      <%= f.input :description, label: "Flat description" %>
+      <%= f.input :price_per_night, input_html: { min: '25', max: '300', step: '25' }, label: "Price per night" %>
+      <%= f.input :number_of_guests, input_html: { min: '1', max: '5' }, label: "Number of guests" %>
+      <%= f.button :submit, class: "btn btn-success mt-3" %>
+    <% end %>
+  </div>
+</div>

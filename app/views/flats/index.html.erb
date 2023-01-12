@@ -1,5 +1,5 @@
 
-<div class="container mt-5">
+<div class="container mt-3">
 <h1>Have a look at our available flats</h1>
 <p><%= @flats.count %> flats</p>
   <div class="flats-container">
@@ -11,7 +11,7 @@
             <h2><%= flat.name %></h2>
             <p><%= flat.address %></p>
           </div>
-          <h2>179.99</h2>
+          <h2><%= flat.price_per_night %>$</h2>
         </div>
         <div class="btn-container">
           <%= link_to "See details" %>
