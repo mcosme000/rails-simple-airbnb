@@ -1,0 +1,30 @@
+.flats-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.trip-card {
+  /* If they don't have a width, they will stretch in the parent element */
+  width: 300px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  margin: 16px 0;
+}
+
+.trip-card-img {
+  width: 100%;
+}
+
+@media(max-width: 950px) {
+  .flats-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 750px) {
+  .flats-container {
+    grid-template-columns: 1fr;
+  }
+}

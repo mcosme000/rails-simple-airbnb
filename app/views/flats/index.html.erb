@@ -1,0 +1,24 @@
+
+<div class="container mt-5">
+<h1>Have a look at our available flats</h1>
+<p><%= @flats.count %> flats</p>
+  <div class="flats-container">
+    <% @flats.each do |flat| %>
+      <div class="trip-card">
+        <img src="..." alt="Flat image" class="trip-card-img">
+        <div class="trip-content">
+          <div>
+            <h2><%= flat.name %></h2>
+            <p><%= flat.address %></p>
+          </div>
+          <h2>179.99</h2>
+        </div>
+        <div class="btn-container">
+          <%= link_to "See details" %>
+          <%= link_to "Edit" %>
+          <%= link_to "Delete" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
