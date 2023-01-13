@@ -21,4 +21,5 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Screenshoot of the project
+![Alt text](/app/assets/images/project_screenshoot.png?raw=true "Final design")
