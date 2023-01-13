@@ -1,22 +1,22 @@
 
-<div class="container mt-3">
+<div class="container my-3">
 <h1>Have a look at our available flats</h1>
 <p><%= @flats.count %> flats</p>
   <div class="flats-container">
     <% @flats.each do |flat| %>
-      <div class="trip-card">
-        <img src="..." alt="Flat image" class="trip-card-img">
-        <div class="trip-content">
+      <div class="flat-card">
+        <img src="https://images.unsplash.com/photo-1502672023488-70e25813eb80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80" alt="Flat image" class="flat-card-img">
+        <div class="flat-content">
           <div>
-            <h2><%= flat.name %></h2>
+            <h4><%= flat.name %></h4>
             <p><%= flat.address %></p>
           </div>
           <h2><%= flat.price_per_night %>$</h2>
         </div>
         <div class="btn-container">
-          <%= link_to "See details", flat_path(flat) %>
-          <%= link_to "Edit", edit_flat_path(flat) %>
-          <%= link_to "Delete", flat_path(flat), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }%>
+          <%= link_to "See details", flat_path(flat), class: "button" %>
+          <%= link_to "Edit", edit_flat_path(flat), class: "button" %>
+          <%= link_to "Delete", flat_path(flat), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "button delete" %>
         </div>
       </div>
     <% end %>

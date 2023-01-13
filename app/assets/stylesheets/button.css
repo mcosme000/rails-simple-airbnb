@@ -1,0 +1,21 @@
+.button {
+  background: rgb(219, 219, 219);
+  padding: 5px 15px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.delete {
+  background: rgb(255, 96, 96);
+}
+
+.main-button {
+  background: rgb(48, 160, 89);
+  color: #fff;
+}
+
+.main-button:hover {
+  background: rgb(46, 110, 69);
+  color: #fff;
+
+}

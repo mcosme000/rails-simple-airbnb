@@ -1,10 +1,4 @@
-<header class="py-3 d-flex justify-content-between container">
-  <div class="logo">GARDBNB</div>
-  <%= link_to "Add a flat", new_flat_path %>
-  <div class="form">
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
-    </div>
-  </div>
+<header class="py-3 d-flex justify-content-between container align-items-center">
+  <h1><%= link_to "GARDBNB", flats_path, class: "logo" %></h1>
+  <%= link_to "Add a flat", new_flat_path, class: "button main-button" %>
 </header>

@@ -6,7 +6,9 @@
   border-radius: 5px;
 }
 
-.info-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+.flat-page {
+  position: relative;
+  margin: 0 auto;
+  top: -80px;
 }
