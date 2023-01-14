@@ -1,25 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<h1>Rails Airbnb Clone</h1>
 
-Things you may want to cover:
+■ About this project
+A simple Airbnb clone made with Ruby on Rails using the MVC pattern.
 
-* Ruby version
+■ User stories
+- As a user, I can see all the available flats on our website
+- As a user, I can post a flat to the website, specifying its name and address
+- As a user, I can see detailed information of a given flat
+- As a user, I can edit the details of a flat if I made a mistake
+- As a user, I can delete a flat from the website, in case I don’t want to rent it anymore
 
-* System dependencies
+■ Next steps
+- Add a search bar to filter flats
+- Add a landing page
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* Screenshoot of the project
+■ Screenshoot of the project
 ![Alt text](/app/assets/images/project_screenshoot.png?raw=true "Final design")
